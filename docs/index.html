@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Appleby - Garden Maintenance and Design</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" media="screen and (max-width: 1280px)" href="style_mobile.css" type="text/css">
+
+	<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="scripts/responsiveslides.min.js"></script>
+	<script>
+		$(function () {
+			$(".rslides").responsiveSlides();
+		});
+	  
+	/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu/bar icon */
+	function hamburgerFunction( linksId ) {
+		var x = document.getElementById(linksId);
+		if (x.style.display === "block") {
+			x.style.display = "none";
+			
+		} else {
+			x.style.display = "block";
+		}
+	  
+		/* Hide the other links */
+		var ids = ["homeNavLinks", "aboutNavLinks", "servicesNavLinks","faqNavLinks","contactNavLinks"];
+		var i;
+		for( i=0; i<ids.length; i++ ) {
+			if ( linksId !== ids[i] ){
+				document.getElementById( ids[i] ).style.display = "none";
+			}
+		}
+	} 
+
+	</script>	
+</head>
+
+<body>
+
+<!-- Start of first page  -->
+<div data-role="page" id="home">
+	<div role="main" class="container">
+		<div class="header" align="center">
+			<div class="logoimages">
+				<img src="images/logo.png" />
+			 </div>
+		</div>		
+		<br>
+		<div class="hamburgernav" >
+			<a href="#home"><i class="fa fa-database fa-fw"></i>Home</a>
+			<div id="homeNavLinks" style="display:none;">
+				<a href="#about"><i class="fa fa-paper-plane fa-fw"></i>About Us</a>
+				<a href="#services"><i class="fa fa-info-circle fa-fw"></i>Our Services</a>
+				<a href="#faq"><i class="fa fa-question-circle fa-fw"></i>FAQs</a>
+				<a href="#contact"><i class="fa fa-envelope fa-fw"></i>Contact Us</a>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="hamburgerFunction('homeNavLinks')">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		<ul class="navigation">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#services">Our Services</a></li>
+			<li><a href="#faq">FAQs</a></li>
+			<li class="last"><a href="#contact">Contact Us</a></li>
+		</ul>
+		<div class="header" align="center">
+			<h1><a href="#contact">CLICK HERE to arrange a FREE, NO OBLIGATION consultation today</a></h1>
+		</div>	
+		<div class="images">
+			<ul class="rslides">
+				<li><img class="img1" src="images/img10.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img12.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img4.JPG" alt="" /></li>
+				<li><img class="img1" src="images/img9.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img17.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img15.JPG" alt="" /></li>
+			</ul>
+		</div>
+
+		<div class= "center" style="padding:0px 10px 0px 10px; text-align: center;">
+			<h2>Specialists in sustainable landscaping and garden design</h2><h3>Helping to reduce your carbon footprint from your garden</h3><br>
+			We are a family run business with over 30 years experience in developing and maintaining sustainable gardens.<br><br>
+			Appleby Landscapes and Gardens Ltd operates throughout Central London, North London and Hertfordshire.<br><br>
+			All our work is guaranteed and we hold full public liability insurance.<br>
+		</div>
+		<br>
+		
+		<div class="footer" align="center">
+    			<p>Est. 1989</p><p>Copyright &copy; 2021 Appleby Landscapes and Gardens Ltd.</p>
+ 	    </div>
+	</div>
+</div>
+
+<!-- Start of second page -->
+<div data-role="page" id="about" >
+	<div role="main" class="container">
+		
+		<div class="header" align="center">
+			<div class="logoimages">
+				<img src="images/logo.png">
+			 </div>
+		</div>		
+		<br>
+		<div class="hamburgernav">
+			<a href="#about"><i class="fa fa-paper-plane fa-fw"></i>About Us</a>
+			<div id="aboutNavLinks" style="display:none;">
+				<a href="#home"><i class="fa fa-database fa-fw"></i>Home</a>
+				<a href="#services"><i class="fa fa-info-circle fa-fw"></i>Our Services</a>
+				<a href="#faq"><i class="fa fa-question-circle fa-fw"></i>FAQs</a>
+				<a href="#contact"><i class="fa fa-envelope fa-fw"></i>Contact Us</a>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="hamburgerFunction('aboutNavLinks')">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		<ul class="navigation">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#services">Our Services</a></li>
+			<li><a href="#faq">FAQs</a></li>
+			<li class="last"><a href="#contact">Contact Us</a></li>
+		</ul>
+		<div class="header" align="center">
+			<h1><a href="#contact">CLICK HERE to arrange a FREE, NO OBLIGATION consultation today</a></h1>
+		</div>	
+		<div class="images">
+			<ul class="rslides">
+				<li><img class="img1" src="images/img10.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img12.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img4.JPG" alt="" /></li>
+				<li><img class="img1" src="images/img9.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img17.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img15.JPG" alt="" /></li>
+			</ul>
+		</div>
+		<div class= "center" style="padding:0px 10px 0px 10px;">
+			<h3>Who are we?</h3>
+			Appleby Landscapes and Gardens Ltd was founded in 1989 by Timothy Howells who is the head of our horticultural consultancy team. This company began with one man operating locally in the London Borough of Barnet. Since then we have expanded to multiple gardening teams operating throughout Central London, North London and Hertfordshire with our head office and horticultural consultancy teams based in St Albans, Hertfordshire.<br>
+			Our staff members have N.P.T.C certificates for the use of sprayers and chainsaws and are fully trained in all essential horticultural skills.<br>
+			All our work is guaranteed and we hold full public liability insurance.
+		</div>
+		<div class= "center" style="background-color:#e8e8e8;padding:0px 10px 0px 10px;">
+			<h3>How do we differ from alternative horticultural services?</h3>
+			Appleby Landscapes and Gardens Ltd pride ourselves in being sustainable and driving the horticultural industry towards a greener future. Garden maintenance is historically associated with loud and polluting machinery; to help combat noise pollution and mitigate further greenhouse gas emissions we have replaced our petrol fuelled handheld machinery with battery powered machinery. We are also in the process of changing all our vehicles to electric powered vans.<br>
+			Due to the recent sustainability movement and climate change crisis we know our customers are more enviromentally aware and interested in becoming self-sufficient.<br>
+			We are devoted to sharing our horticultural expertise, to help our customers reduce their carbon footprint and save money.<br><br>
+		</div>
+        <div class="footer" align="center">
+            <p>Est. 1989</p><p>Copyright &copy; 2021 Appleby Landscapes and Gardens Ltd.</p>
+        </div>
+	</div>
+</div>
+
+<!-- Start of third page -->
+<div data-role="page" id="services">
+	<div role="main" class="container">
+		
+		<div class="header" align="center">
+			<div class="logoimages">
+				<img src="images/logo.png">
+			 </div>
+		</div>		
+		<br>
+		<div class="hamburgernav" >
+			<a href="#services"><i class="fa fa-info-circle fa-fw"></i>Our Services</a>
+			<div id="servicesNavLinks" style="display:none;">
+				<a href="#home"><i class="fa fa-database fa-fw"></i>Home</a>
+				<a href="#about"><i class="fa fa-paper-plane fa-fw"></i>About Us</a>
+				<a href="#faq"><i class="fa fa-question-circle fa-fw"></i>FAQs</a>
+				<a href="#contact"><i class="fa fa-envelope fa-fw"></i>Contact Us</a>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="hamburgerFunction('servicesNavLinks')">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		<ul class="navigation">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#services">Our Services</a></li>
+			<li><a href="#faq">FAQs</a></li>
+			<li class="last"><a href="#contact">Contact Us</a></li>
+		</ul>
+		<div class="header" align="center">
+			<h1><a href="#contact">CLICK HERE to arrange a FREE, NO OBLIGATION consultation today</a></h1>
+		</div>	
+		<div class="images">
+			<ul class="rslides">
+				<li><img class="img1" src="images/img10.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img12.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img4.JPG" alt="" /></li>
+				<li><img class="img1" src="images/img9.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img17.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img15.JPG" alt="" /></li>
+			</ul>
+		</div>
+		<div class= "center" style="padding:0px 10px 0px 10px;">
+			<h3>To discuss your requirements today, call us directly on: <a href="tel:+44-1727-812810">01727 812810</a></h3>
+		</div>
+		<div class= "center" style="padding:0px 10px 0px 10px;">
+			<h4>For more information please see a list of our services below:</h4>
+		</div>
+		<div class= "center" style="background-color:#e8e8e8;padding:0px 10px 0px 10px;">
+			<h4><i class="fa fa-info-circle fa-fw"></i>Grounds Clearance, Maintenance and Garden Cleaning:</h4>
+			This includes specialist tree and shrub pruning, identification and treatment of garden pests and diseases and pressure washing. Our horticulture consultants are available to advise on sustainable landscaping and gardening options, to help our customers save time and money on weekly maintanence.
+		</div>
+		<div class= "center" style="padding:0px 10px 0px 10px;">
+			<h4><i class="fa fa-info-circle fa-fw"></i>Sustainable Landscaping and Garden Design:</h4>
+			Appleby Landscapes and Gardens Ltd pride ourselves in our design team, who have a passion for developing environmentally friendly landscapes and gardens. We have many years of experience in creating different styles of gardens, keeping up with fashion trends and have even worked on projects for the prestigious Chelsea flower show.
+		</div>
+		<div class= "center" style="background-color:#e8e8e8;padding:0px 10px 0px 10px;">
+			<h4><i class="fa fa-info-circle fa-fw"></i>Planting Plans, Plant Delivery and Planting:</h4>
+			We are experts in large scale planting for formal gardens as well as smaller planting displays such as hanging baskets and pots or planters. The plants we work with are locally sourced and sustainably grown, in an effort to support local businesses and reduce our carbon footprint.
+		</div>
+		<div class= "center" style="padding:0px 10px 0px 10px;">
+			<h4><i class="fa fa-info-circle fa-fw"></i>Orchard and Vegetable Garden Development and Maintenance:</h4>
+			Our permaculture specialists are enthusiastic about sustainable gardening. We have many years of experience in orchard development and maintenance as well as in both ornamental and working vegetable gardens.
+		</div>
+        <div class="footer" align="center">
+            <p>Est. 1989</p><p>Copyright &copy; 2021 Appleby Landscapes and Gardens Ltd.</p>
+        </div>
+	</div>
+</div>
+
+<!-- Start of fourth page -->
+<div data-role="page" id="faq">
+	<div role="main" class="container">
+		
+		<div class="header" align="center">
+			<div class="logoimages">
+				<img src="images/logo.png">
+			 </div>
+		</div>		
+		<br>
+		<div class="hamburgernav" >
+			<a href="#faq"><i class="fa fa-question-circle fa-fw"></i>FAQs</a>
+			<div id="faqNavLinks" style="display:none;">
+				<a href="#home"><i class="fa fa-database fa-fw"></i>Home</a>
+				<a href="#about"><i class="fa fa-paper-plane fa-fw"></i>About Us</a>
+				<a href="#services"><i class="fa fa-info-circle fa-fw"></i>Our Services</a>
+				<a href="#contact"><i class="fa fa-envelope fa-fw"></i>Contact Us</a>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="hamburgerFunction('faqNavLinks')">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		<ul class="navigation">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#services">Our Services</a></li>
+			<li><a href="#faq">FAQs</a></li>
+			<li class="last"><a href="#contact">Contact Us</a></li>
+		</ul>
+		<div class="header" align="center">
+			<h1><a href="#contact">CLICK HERE to arrange a FREE, NO OBLIGATION consultation today</a></h1>
+		</div>	
+		<div class="images">
+			<ul class="rslides">
+				<li><img class="img1" src="images/img10.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img12.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img4.JPG" alt="" /></li>
+				<li><img class="img1" src="images/img9.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img17.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img15.JPG" alt="" /></li>
+			</ul>
+		</div>
+		<div class= "center" style="padding:0px 10px 0px 10px;">
+			<h4><i class="fa fa-question-circle fa-fw"></i>How to start a garden?</h4>
+			What really makes a garden is what you choose to plant, and this should be determined by your soil type. There are 3 main soil types: Sand, Silt and Clay, however other factors such as the soils pH, the soils water retention and exposure to the elements will affect which plants will thrive in your garden.
+		</div>
+		<div class= "center" style="background-color:#e8e8e8;padding:0px 10px 0px 10px;">
+			<h4><i class="fa fa-question-circle fa-fw"></i>How often should I water my plants?</h4>
+			You should always water your plants in after planting, to a depth of 10cm. After that as long as you have used plants compatible with the soil and environment they should thrive without much intervention. We recommend watering plants in summer but only if they are starting to wilt. Over watering can cause permanent damage whereas plants can easily bounce back from a slight drought.
+		</div>
+		<div class= "center" style="padding:0px 10px 0px 10px;">
+			<h4><i class="fa fa-question-circle fa-fw"></i>When should I plant bulbs?</h4>
+			We all know that most bulbs appear in spring, but you should actually start planting your bulbs 6 months in advance. In the south-east of England we would usually recommend planting spring flowering bulbs such as Daffodils (Narcissus), Tulips (Tulipa) and Hyacinths (Hyacinthus) in late autumn.
+		</div>
+		<div class= "center" style="background-color:#e8e8e8;padding:0px 10px 0px 10px;">
+			<h4><i class="fa fa-question-circle fa-fw"></i>How to encourage local wildlife into my garden?</h4>
+			Our native bees and butterflies are losing their habitat due to our love of a perfectly mown lawn. Installing a perennial wildflower meadow is the best thing to encourage them back into your garden. Other ideas such as installing a pond to encourage birds and frogs or creating log piles for hedgehogs and insects will help increase biodiversity in your garden.
+		</div>
+		<div class= "center" style="padding:0px 10px 0px 10px;">
+			<h4><i class="fa fa-question-circle fa-fw"></i>How to remove weeds without chemicals?</h4>
+			There are no fail safe ways to control weeds, however we recommend scratching the soil with a gardening hoe and then covering the bed with a mulch to prevent them regrowing. Once you are on top of your weeding it is a fairly quick task, however you must be vigilant as one year of seed means 7 years of weeds.
+		</div>
+		<div class= "center" style="background-color:#e8e8e8;padding:0px 10px 0px 10px;">
+			<h4><i class="fa fa-question-circle fa-fw"></i>Why aren't my plants growing?</h4>
+			A common cause for stunted growth or yellowing leaves is overly compacted soil. Compacted soil reduces a plants ability to access vital water and nutrients. You can combat this by preparing the ground well before planting or sowing. You should dig the soil over, removing weeds and large stones as you go, then add organic matter to it.
+		</div>
+		<div class= "center" style="padding:0px 10px 0px 10px;">
+			<h4><i class="fa fa-question-circle fa-fw"></i>How to get rid of moss in my lawn?</h4>
+			Moss is often caused by tree roots growing underneath the lawn. Feeding the lawn heavily where tree roots are present will discourage it. Alternatively yearly scarification as part of your lawn maintenance schedule will help reduce moss and dead grass, keeping your lawn looking green and healthy.
+		</div>
+		<div class= "center" style="background-color:#e8e8e8;padding:0px 10px 0px 10px;">
+			<h4><i class="fa fa-question-circle fa-fw"></i>When is the best time to plant a tree?</h4>
+			The best time to plant a tree is 10 years ago. The second best time to plant a tree is now!
+		</div>		
+        <div class="footer" align="center">
+            <p>Est. 1989</p><p>Copyright &copy; 2021 Appleby Landscapes and Gardens Ltd.</p>
+        </div>
+	</div>
+</div>
+
+<!-- Start of fifth page -->
+<div data-role="page" id="contact">
+	<div role="main" class="container">
+		
+		<div class="header" align="center">
+			<div class="logoimages">
+				<img src="images/logo.png">
+			 </div>
+		</div>		
+		<br>
+		<div class="hamburgernav" >
+			<a href="#contact"><i class="fa fa-envelope fa-fw"></i>Contact Us</a>
+			<div id="contactNavLinks" style="display:none;">
+				<a href="#home"><i class="fa fa-database fa-fw"></i>Home</a>
+				<a href="#about"><i class="fa fa-paper-plane fa-fw"></i>About Us</a>
+				<a href="#services"><i class="fa fa-info-circle fa-fw"></i>Our Services</a>
+				<a href="#faq"><i class="fa fa-question fa-fw"></i>FAQs</a>
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="hamburgerFunction('contactNavLinks')">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		<ul class="navigation">
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Us</a></li>
+			<li><a href="#services">Our Services</a></li>
+			<li><a href="#faq">FAQs</a></li>
+			<li class="last"><a href="#contact">Contact Us</a></li>
+		</ul>
+		<div class="header" align="center">
+			<h1><a href="https://g.page/r/CWBz6OUCVNvdEAg/review">CLICK HERE to leave a review</a></h1>
+		</div>	
+		<div class="images">
+			<ul class="rslides">
+				<li><img class="img1" src="images/img10.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img12.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img4.JPG" alt="" /></li>
+				<li><img class="img1" src="images/img9.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img17.jpg" alt="" /></li>
+				<li><img class="img1" src="images/img15.JPG" alt="" /></li>
+			</ul>
+		</div>
+		<div class= "center" style="padding:0px 10px 0px 10px;text-align: center;">
+			<i class="fa fa-phone fa-fw"/></i>Call us today on:<br><br><a href="tel:+44-1727-812810">01727 812810</a><br><br>
+			<i class="fa fa-envelope fa-fw"/></i>E-mail us today at:<br><br><a href="mailto:info@applebygardens.com?subject=quote">info@applebygardens.com</a><br><br>
+			Follow us on social media:<br><br><a href="https://www.facebook.com/Appleby-Landscapes-and-Gardens-Ltd-101284888695853"><i class ="fa fa-facebook"></i></a><br><a href="https://www.instagram.com/appleby.gardens/"><i class ="fa fa-instagram"></i></a><br><br>
+			<i class="fa fa-pencil fa-fw"/></i>Write to us directly at: <br><br>Appleby Landscapes and Gardens Ltd,<br>St. Albans,<br>Hertfordshire,<br>AL1 5SP<br><br>
+			If you are interested in joining our team please e-mail your CV to <a href="mailto:info@applebygardens.com?subject=quote"> info@applebygardens.com</a><br><br>
+        </div>
+        <div class="footer" align="center">
+            <p>Est. 1989</p><p>Copyright &copy; 2021 Appleby Landscapes and Gardens Ltd.</p>
+        </div>
+	</div>
+</div>
+
+</body>
+</html>
