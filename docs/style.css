@@ -26,7 +26,7 @@
 }
 
 .header h1 a {
-	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;"
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	text-decoration: none;
 	color:white;
 	font-weight: bold;
@@ -80,7 +80,7 @@ ul.navigation li.last {
 ul.navigation li a {
 	color:white;
 	display: block;
-	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;"
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	font-weight:bold;
 	font-size:14px;
 	padding: 8px 16px 8px 16px;
@@ -112,17 +112,17 @@ a  {
   width: 50%;
   padding: 10px;
   text-align: left;
-  font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;"
+  font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 .center h2 {
 	text-align: center;
 	text-transform: uppercase;
-	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;"
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
 
 .center h3 {
 	text-align: center;
-	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;"
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
   
 .body {
@@ -137,7 +137,7 @@ a  {
 .body .title {
 	color:#7F0000;
 	font-size:18px;
-	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;"
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	font-weight:bold;
 	text-align: center;
 }	 
@@ -145,7 +145,7 @@ a  {
 .body p {
 	color:#000;
 	font-size:16px;
-	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;"
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	margin:20px;
 	text-align: center;
 	padding:10px 10px 10px 10px;"
@@ -184,7 +184,7 @@ a  {
 .footer p {
 	color:#FFF;
 	font-size:12px;
-	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;"
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	padding:0px;
 	margin:0px;
 	text-shadow: none;
@@ -217,37 +217,5 @@ a  {
 	text-align: center;
 	font-weight: bold;
 	text-shadow: none;
-	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;"
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

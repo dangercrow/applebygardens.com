@@ -27,7 +27,7 @@
 }
 
 .header h1 a {
-	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;"
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	text-decoration: none;
 	color:white;
 	font-weight: bold;
@@ -87,14 +87,14 @@ a {
 	 
 .body .title {
 	font-size:18px;
-	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;"
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	font-weight:bold;
 }	 
  
 .body p {
 	color:#000;
 	font-size:16px;
-	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;"
+	font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 	padding:0px;
 	margin:0px;
 	text-align: center;
